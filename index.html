@@ -9,47 +9,57 @@
   <body>
     <section class="gamefield">
       <div class="__cell">
-        <div class="namefield">
+        <div id="namefield" class="namefield">
           <h3>Hello, I am Mellow. What's your name?</h3>
           <input type="text" id="player_name" />
-          <button onclick="getPlayerName()">Submit Name</button>
+          <button id="get_player_name" onclick="getPlayerName()">
+            Submit Name
+          </button>
         </div>
-        <div>
-          <h3 id="display_player_name"></h3>
-        </div>
-        <div class="after_player_name">
+        <div id="after_player_name" class="after_player_name">
+          <div class="player_name_field">
+            <h3 id="display_player_name"></h3>
+          </div>
           <div>
-            <h3>
-              I will generate a random number between 1-20. You have 10 tries.
+            <p>
+              I will generate a random number between 1-20. You have 5 tries.
               Ready?
-            </h3>
+            </p>
           </div>
           <div>
             <button onclick="randomNumberGenerator()">
               Yes, I am ready! Let's play
             </button>
+            <p class="note">Note: if you leave the input empty or insert number that is not in range your try will not count.</p>
           </div>
+        </div>
+        <div id="guess_the_number_field" class="guess_the_number_field">
           <div>
             <p>Guess the number in this box</p>
             <input
               type="number"
               min="1"
               step="1"
+              max="20"
               name="getPlayerNumber"
               id="getPlayerNumber"
+              style="width: 200px;"
             />
             <button id="getusernr" onclick="getUserNumber()">
               Submit Number
             </button>
           </div>
-          <div>
+          <!-- <div>
             <h3 id="resultText"></h3>
-          </div>
-          <div>
-            <p id="random_number"></p>
+          </div> -->
+          <div class="resultsField">
+            <!-- <p id="random_number"></p> -->
 
             <p id="text_field"></p>
           </div>
+        </div>
+        <div id="play_again_field" class="play_again_field">
+          <button class="play_againBtn" onclick="playAgain()">Play again</button>
         </div>
       </div>
     </section>

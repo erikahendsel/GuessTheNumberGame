@@ -1,0 +1,13 @@
+.after_player_name {
+    display: none;
+    // height: 0;
+	// overflow: hidden;
+    transition: height 350ms ease-in-out;
+    background-color: rgba(255,235,137,0.6);
+    padding: 4%;
+}
+
+// .after_player_name.is-visible {
+// 	display: block;
+// 	height: auto;
+// }

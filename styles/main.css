@@ -13,6 +13,7 @@ body {
 
 p {
   font-size: 30px;
+  padding: 2rem 0;
 }
 
 .gamefield {
@@ -34,6 +35,20 @@ p {
 h3 {
   font-size: 2.5em;
   margin: 2rem 0;
+}
+
+.note {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.namefield {
+  background-color: rgba(255, 235, 137, 0.6);
+  padding: 4%;
+}
+
+.player_name_field {
+  height: 4rem;
 }
 
 input {
@@ -95,5 +110,33 @@ button:hover::before {
 
 button:hover::after {
   height: 100%;
+}
+
+.after_player_name {
+  display: none;
+  -webkit-transition: height 350ms ease-in-out;
+  transition: height 350ms ease-in-out;
+  background-color: rgba(255, 235, 137, 0.6);
+  padding: 4%;
+}
+
+.guess_the_number_field {
+  display: none;
+  background-color: rgba(255, 235, 137, 0.6);
+  padding: 2%;
+}
+
+.resultsField {
+  height: 3rem;
+}
+
+.play_again_field {
+  display: none;
+  background-color: rgba(255, 235, 137, 0.6);
+  padding-bottom: 2%;
+}
+
+.play_again_field .play_againBtn {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
